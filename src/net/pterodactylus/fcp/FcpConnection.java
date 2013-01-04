@@ -79,7 +79,7 @@ public class FcpConnection implements Closeable {
 	 *             if the hostname can not be resolved
 	 */
 	public FcpConnection() throws UnknownHostException {
-		this(InetAddress.getLocalHost());
+		this(InetAddress.getLoopbackAddress());
 	}
 
 	/**
